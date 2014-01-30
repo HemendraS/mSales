@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sales Demo</title>
+	<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.3.2.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<script src="js/jquery.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/jquery.mobile-1.3.2.min.js"></script>
+	<style>
+	  .ui-grid-b img 
+   {
+     width  : 90%;
+     height : auto;
+	 align:right;
+	 
+    }
+	.Center
+	{
+margin:0 auto;
+margin-left:45px;
+margin-right:auto;
+margin-top: 42px;
+width: 319px;
+}
+	
+   </style>
+</head>
+<body>
+	<div data-role="page" data-theme="d" id="pageone">
+		<div data-role="header" data-position="inline">
+		<a href="#" data-icon="home" data-role="button" data-inline="true">Home</a>
+		<h1>Sales</h1>
+		<a href="#" data-icon="search" data-role="button" data-inline="true">Search</a>
+		</div>
+	<div data-role="content">
+	<div role="main" class="ui-content">
+		<div class="ui-grid-b Center" style="alignment">
+    <div class="ui-block-a">
+        <div class=""><a href="#pagetwo"  data-transition="flow">
+        <img alt="alt..." src="youtube.png"  />
+        </a>
+		<div class="im" font size="4" ><b>Sales Demo</b></div>
+        </div>
+    </div>
+    <div class="ui-block-b">
+        <div class=""> <a href="xxx.htm">
+        <img alt="alt..." src="mobile_app.png" />
+        </a>
+		<div class="im" font size="4"><b>Google</b></div>
+        </div>
+    </div>
+	 <div class="ui-block-a">
+        <div class=""> <a href="xxx.htm">
+        <img alt="alt..." src="envato.png" />
+        </a>
+    <div class="im" font size="4" ><b>Play store</b></div>
+        </div>
+    </div>
+    <div class="ui-block-b">
+        <div class=""> <a href="xxx.htm">
+        <img alt="alt..." src="skype.png" />
+        </a>
+		<div class="im" font size="4"><b>Skype</b></div>
+        </div>
+    </div>
+	</div>
+	</div>
+	</div> 
+</div>
+     <div data-role="page" id="pagetwo">
+  <div data-role="header">
+  <a href="#pageone" data-icon="home" data-role="button" data-inline="true">Home</a>
+    <h1>Sales demo</h1>
+	<a href="#" data-icon="search" data-role="button" data-inline="true">Search</a>
+  </div>
+
+  <div data-role="content">
+  <h2>Sales</h2>
+    <ul data-role="listview" data-inset="true">
+      <li data-role="divider">Sales</li>
+      <li>
+        <a href="#pagethree"  data-transition="flow">
+        <img src="Orderbook.png">
+        <h2>Order Booking</h2>
+        <p>Sales order booking</p>
+        </a>
+        <a href="#pagethree"  data-transition="flow"></a>
+      </li>
+      <li>
+        <a href="#">
+        <img src="mobile_home.png">
+        <h2>Open Order</h2>
+        <p>Order which are still in process.</p>
+        </a>
+        <a href="#pageone" data-rel="dialog" data-transition="pop"></a>
+      </li>
+    </ul>
+  </div>
+</div> 	
+  <div data-role="page" id="pagethree">
+  <div data-role="header">
+      <a href="#pageone" data-icon="home" data-role="button" data-inline="true">Home</a>
+    <h1>Order Booking</h1>
+	<a href="#" data-icon="search" data-role="button" data-inline="true">Search</a>
+  </div>
+  <div data-role="content">
+    <form action="" method="POST">
+      <div data-role="fieldcontain">
+	  <div>
+        <label for="Delaer">Dealer code:</label>
+        <select name="DEALERCODE" id="day">
+          <option value="null"></option>
+          <option value="1000">1000</option>
+          <option value="2000">2000</option>
+        </select>
+		<label for="Dealer_location">Dealer Location:</label>
+        <input type="text" name="DEALERLOC" id="DLOC"> 
+		</div>
+		   <div class="ui-grid-b">
+     <div class="ui-block-a">
+     <label for="fullname">Model No.:</label>
+    <input type="text" name="MODEL" id="MODN">
+	 <input type="text" name="MODEL" id="MODN">
+	 <input type="text" name="MODEL" id="MODN">
+     </div>
+     <div class="ui-block-b">
+ <label for="fullname">Quantity:</label>
+    <input type="text" name="QUANTITY" id="fullname">
+	<input type="text" name="QUANTITY" id="fullname">
+	<input type="text" name="QUANTITY" id="fullname">
+     </div>
+     <div class="ui-block-c">
+ <label for="fullname">UOM:</label>
+    <input type="text" name="UOM" id="fullname">
+	<input type="text" name="UOM" id="fullname">
+	<input type="text" name="UOM" id="fullname">
+     </div>
+   </div>
+ <div class="ui-grid-a">
+<div class="ui-block-a">
+    <label for="bday">Date:</label>
+    <input type="date" name="SALESDATE" id="date">
+ </div>
+   <div class="ui-block-b">
+     <label for="time">Time:</label>
+    <input type="Time" name="TIME" id="date"> 
+</div>
+ </div>
+      </div>
+	  <input type="submit" data-inline="true" value="Submit">
+    </form>
+  </div>
+</div>
+  <div data-role="page" id="pagefour">
+  <div data-role="header">
+    <h1>Message</h1>
+  </div>
+  <div data-role="content">
+  <p id="msg" value=""></p>
+  </div>
+</div>
+</body>
+
+</html>
